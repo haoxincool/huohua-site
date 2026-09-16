@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>火花 · 隐私政策 | Huohua Privacy Policy</title>
+<title>火花日记 · 隐私政策 | Huohua Diary Privacy Policy</title>
 <style>
   :root {
     --bg: #FBF7F0;
@@ -60,105 +60,145 @@
 <div class="wrap">
 
   <div class="flame">🔥</div>
-  <h1>火花 · 隐私政策</h1>
-  <p class="sub">生效日期：2026 年 7 月 23 日</p>
+  <h1>火花日记 · 隐私政策</h1>
+  <p class="sub">生效日期：2026 年 9 月 16 日<br><span class="muted">首版发布于 2026 年 7 月 23 日；本次更新补充了 Apple 系统服务、设备备份、AI 生成内容与关怀信息、适用地区的说明。</span></p>
 
   <p class="lang-note"><a href="#english">English version below ↓</a></p>
 
   <div class="headline">
-    火花没有服务器，也没有账号体系。<br>
-    <strong>你的日记只存在于你的手机上，我们无法看到、也从不收集任何数据。</strong>
+    火花日记没有服务器，也没有账号体系。<br>
+    <strong>你的日记只存在于你的手机上，开发者无法看到、也从不收集任何数据。</strong>
   </div>
 
   <h2>1. 我们收集哪些数据？</h2>
-  <p><strong>不收集任何数据。</strong>火花不含用户注册、登录或账号功能，不集成任何统计、广告或行为分析 SDK，不向任何服务器发送你的个人信息。开发者不知道你是谁，也无从知道你写了什么。</p>
+  <p><strong>开发者不收集任何数据。</strong>火花日记不含用户注册、登录或账号功能，不集成任何统计、广告或行为分析 SDK，不向开发者或任何第三方的服务器发送你的信息。开发者不知道你是谁，也无从知道你写了什么。App 唯一的联网行为是第 4 节所列的 Apple 系统服务：那些请求由 Apple 处理，开发者收不到其中的任何数据。</p>
 
   <h2>2. 你的日记内容保存在哪里？</h2>
   <ul>
     <li>你的文字、语音、照片、视频、位置标注等全部记录，仅保存在<strong>你自己设备的本地存储</strong>中；</li>
-    <li>AI 功能（回应、情绪识别、日/周/月度回顾）由<strong>在你设备上运行的本地模型</strong>完成，内容不会离开你的手机；</li>
-    <li>语音转文字使用 Apple 提供的<strong>设备端语音识别</strong>，同样在本地完成。</li>
+    <li>AI 功能（回信、心情卡、日/周/月/年回顾）由<strong>在你设备上运行的本地模型</strong>完成，你写下的内容不会离开你的手机；</li>
+    <li>语音转文字使用 Apple 提供的<strong>设备端语音识别</strong>，同样在本地完成；识别所需的语言包是 iOS 系统资源，由系统从 Apple 下载（见第 4 节），你的录音不会上传。</li>
   </ul>
 
   <h2>3. 系统权限的用途</h2>
   <ul>
     <li><strong>麦克风与语音识别</strong>：录制语音日记并转为文字，处理均在本地；</li>
     <li><strong>相机与相册</strong>：拍摄或选取照片、视频作为日记记录，照片还可插入日记正文；</li>
-    <li><strong>位置</strong>（可选）：为当条记录标注地点；</li>
+    <li><strong>位置</strong>（可选）：为当条记录标注地点和当时的天气。你允许定位后，坐标会交给 Apple 的地理编码服务与 WeatherKit 换取地名和天气（见第 4 节）；坐标本身只保存在你的手机里，不会发送给开发者；</li>
     <li><strong>面容 ID</strong>（可选）：在本机验证身份以保护日记，生物特征数据由 iOS 系统管理，App 无法读取。</li>
   </ul>
   <p>以上权限均可拒绝或随时在系统设置中关闭，仅影响对应功能。</p>
 
-  <h2>4. 数据备份与删除</h2>
+  <h2>4. Apple 系统服务</h2>
+  <p>火花日记不与开发者的服务器或任何第三方通信——开发者根本没有服务器。以下功能会通过 Apple 的系统服务联网；这些请求由 Apple 按其隐私政策处理，开发者无法访问、也不会留存其中的任何数据：</p>
   <ul>
-    <li>App 内置「备份与恢复」功能，可将全部数据导出为文件，去向完全由你决定（AirDrop、U 盘、本机文件等）；</li>
+    <li><strong>天气与地名</strong>：只有在你允许使用位置后，写记录时的坐标才会发送给 Apple 的 WeatherKit（换取当时的天气）和地理编码服务（换取地名），用来给这条记录标上天气和地点。坐标本身只保存在你的手机里。你随时可以在系统设置中关闭定位，之后新记录不再显示地名与天气；</li>
+    <li><strong>AI 模型下载</strong>：AI 模型由 Apple 托管（Apple-Hosted Background Assets），通过 Apple 的服务器下载到你的手机（约 2.4–3.4 GB），下载后完全在本机运行。下载过程由 Apple 处理，开发者不参与、也不获得任何信息。这个模型是公开发布的开放权重模型（Google Gemma），在你的手机上离线运行，模型的发布方同样收不到你的任何内容；</li>
+    <li><strong>语音识别语言包</strong>：语音转文字所需的语言包是 iOS 系统资源，由系统从 Apple 下载；你的录音和转写结果都不会上传；</li>
+    <li><strong>App Store 商店区</strong>：火花日记会通过 StoreKit 在本机读取你 Apple 账户所属的 App Store 商店区（只是一个国家/地区代码），用来决定关怀信息里显示哪一条当地心理援助热线。这一步不涉及任何购买，也不会把任何信息发给开发者。</li>
+  </ul>
+  <p>除上述 Apple 系统服务外，火花日记不进行任何其他网络通信。</p>
+
+  <h2>5. 数据备份与删除</h2>
+  <ul>
+    <li>App 内置「备份与恢复」功能（信箱 › 设置 › 备份与恢复），可将全部数据导出为一个 zip 备份包（内含可读的 JSON 文件与语音、照片、视频原件），去向完全由你决定（AirDrop、U 盘、本机文件等）；</li>
+    <li><strong>设备备份</strong>：如果你开启了 iCloud 备份或用电脑备份手机，iOS 会像对待其他 App 一样，把火花日记的数据一并纳入手机备份，保存在你自己的 Apple 账户或电脑中。这一过程只经 Apple 保管，不经火花的任何服务器——火花没有服务器。你可以在 iOS 设置的 iCloud 备份选项里单独关闭火花日记的备份；</li>
     <li>AI 模型文件已排除在 iCloud 备份之外，不占用你的 iCloud 空间；</li>
     <li>删除 App 即删除设备上的全部数据。请在删除前先行备份。</li>
   </ul>
 
-  <h2>5. 第三方共享</h2>
-  <p>不适用。火花不与任何第三方共享数据——因为我们从一开始就没有你的数据。</p>
+  <h2>6. AI 生成内容与关怀信息</h2>
+  <ul>
+    <li><strong>AI 生成内容</strong>：火花的回信、心情卡与日/周/月/年回顾由下载到本机的 AI 模型生成，每一段都带有「火花」署名，表明这些文字是 AI 写的。火花日记是一个日记工具，不是人，它写的内容也不是医疗、心理或其他专业建议；AI 生成的文字可能出错，请自行判断。这些文字归你自由使用，开发者不对其主张任何权利；</li>
+    <li><strong>关怀信息与热线</strong>：当你写下的内容出现明显的危机信号时，火花会在回应中附上一条公开的 24 小时心理援助热线号码（按你的 App Store 商店区选择，见第 4 节）。这只是把出口递到你手边：火花不做任何诊断或评估，这一判断在你的手机上完成，相关内容不会发给任何人。</li>
+  </ul>
 
-  <h2>6. 儿童隐私</h2>
-  <p>火花不面向 14 周岁以下儿童设计。由于 App 不收集任何数据，我们也不会收集儿童的个人信息。</p>
+  <h2>7. 第三方共享</h2>
+  <p>不适用。火花日记不与任何第三方共享数据——因为开发者从一开始就没有你的数据。唯一的例外是第 4 节所述的 Apple 系统服务：相关数据由 Apple 按其隐私政策处理，开发者无法访问。</p>
 
-  <h2>7. 政策变更</h2>
-  <p>若未来功能变化涉及数据处理方式调整（例如可选的云同步），我们会在此页面更新说明，并在 App 内显著提示。「日记内容默认仅存本地」的原则不会改变。</p>
+  <h2>8. 儿童隐私</h2>
+  <p>火花日记不面向 14 周岁以下儿童设计。由于 App 不收集任何数据，我们也不会收集儿童的个人信息。</p>
 
-  <h2>8. 联系我们</h2>
+  <h2>9. 适用地区与语言</h2>
+  <p>火花日记首发于 App Store 的香港、澳门、台湾、新加坡、马来西亚和加拿大商店区。本政策适用于所有发行地区；中文版为准，英文版供参考。</p>
+
+  <h2>10. 政策变更</h2>
+  <p>若未来功能变化涉及数据处理方式调整（例如可选的云同步），我们会在此页面更新说明并标明新的生效日期，并在 App 内显著提示。「日记内容默认仅存本地」的原则不会改变。</p>
+
+  <h2>11. 联系我们</h2>
   <p>对本政策有任何疑问，请联系开发者：<strong>haoxincool@126.com</strong></p>
 
   <hr class="divider" id="english">
 
   <div class="flame">🔥</div>
-  <h1>Huohua (Spark) · Privacy Policy</h1>
-  <p class="sub">Effective date: July 23, 2026</p>
+  <h1>Huohua Diary · Privacy Policy</h1>
+  <p class="sub">Effective date: September 16, 2026<br><span class="muted">First published July 23, 2026. This update adds sections on Apple system services, device backups, AI-generated content and care messages, and the regions where the app is available.</span></p>
 
   <div class="headline">
-    Huohua has no servers and no accounts.<br>
-    <strong>Your journal lives only on your device. We cannot see it, and we never collect anything.</strong>
+    Huohua Diary has no servers and no accounts.<br>
+    <strong>Your journal lives only on your device. The developer cannot see it and never collects anything.</strong>
   </div>
 
   <h2>1. What data do we collect?</h2>
-  <p><strong>None.</strong> Huohua has no registration, login, or account system. It contains no analytics, advertising, or tracking SDKs, and sends no personal information to any server. The developer does not know who you are, nor what you write.</p>
+  <p><strong>None. The developer collects no data.</strong> Huohua Diary has no registration, login, or account system. It contains no analytics, advertising, or tracking SDKs, and sends nothing to the developer or to any third-party server. The developer does not know who you are, nor what you write. The app's only network activity is the Apple system services listed in Section 4; those requests are handled by Apple, and the developer receives none of that data.</p>
 
   <h2>2. Where is your journal stored?</h2>
   <ul>
     <li>All your entries — text, voice recordings, photos, videos, and location tags — are stored <strong>only in your device's local storage</strong>;</li>
-    <li>AI features (replies, mood insights, daily/weekly/monthly reviews) are powered by <strong>an on-device model running locally on your phone</strong>. Your content never leaves your device;</li>
-    <li>Speech-to-text uses Apple's <strong>on-device speech recognition</strong>, which also runs entirely locally.</li>
+    <li>AI features (replies, mood cards, daily/weekly/monthly/yearly reviews) are powered by <strong>an on-device model running locally on your phone</strong>. What you write never leaves your device;</li>
+    <li>Speech-to-text uses Apple's <strong>on-device speech recognition</strong>, which also runs entirely locally. The language packs it needs are iOS system resources downloaded by the system from Apple (see Section 4); your recordings are never uploaded.</li>
   </ul>
 
   <h2>3. System permissions</h2>
   <ul>
-    <li><strong>Microphone & Speech Recognition</strong>: to record voice entries and transcribe them locally;</li>
-    <li><strong>Camera & Photo Library</strong>: to capture or attach photos and videos;</li>
-    <li><strong>Location</strong> (optional): to tag where an entry was written;</li>
+    <li><strong>Microphone &amp; Speech Recognition</strong>: to record voice entries and transcribe them locally;</li>
+    <li><strong>Camera &amp; Photo Library</strong>: to capture or attach photos and videos as entries; photos can also be inserted into a diary's text;</li>
+    <li><strong>Location</strong> (optional): to tag where an entry was written and the weather at the time. Once you grant permission, the coordinates are sent to Apple's geocoding service and WeatherKit to obtain a place name and the weather (see Section 4); the coordinates themselves stay on your phone and are never sent to the developer;</li>
     <li><strong>Face ID</strong> (optional): to protect your journal on-device. Biometric data is managed by iOS and never accessible to the app.</li>
   </ul>
   <p>All permissions can be declined or revoked anytime in Settings; only the corresponding feature is affected.</p>
 
-  <h2>4. Backup & deletion</h2>
+  <h2>4. Apple system services</h2>
+  <p>Huohua Diary never talks to a developer server or to any third party — the developer has no server at all. The following features use Apple's own system services over the network. These requests are handled by Apple under Apple's privacy policy; the developer can neither access nor retain any of that data:</p>
   <ul>
-    <li>The built-in Backup & Restore feature exports all your data as files — where they go is entirely up to you (AirDrop, USB drive, local files, etc.);</li>
-    <li>AI model files are excluded from iCloud backup and do not consume your iCloud storage;</li>
+    <li><strong>Weather and place names</strong>: only after you allow location access, the coordinates of an entry are sent to Apple's WeatherKit (for the weather at that moment) and Apple's geocoding service (for a place name) to stamp the entry with its weather and place. The coordinates themselves stay on your phone. You can turn off location access in Settings at any time; new entries will then show no place or weather;</li>
+    <li><strong>AI model download</strong>: the AI model is hosted by Apple (Apple-Hosted Background Assets) and downloaded to your phone from Apple's servers (about 2.4–3.4 GB); once downloaded it runs entirely on your device. The download is handled by Apple; the developer is not involved and receives no information. The model is a publicly released open-weight model (Google Gemma) that runs offline on your phone; its publisher likewise never receives any of your content;</li>
+    <li><strong>Speech-recognition language packs</strong>: the language packs used for speech-to-text are iOS system resources downloaded by the system from Apple; neither your recordings nor the transcripts are uploaded;</li>
+    <li><strong>App Store storefront</strong>: Huohua Diary uses StoreKit to read, on the device, the App Store storefront of your Apple account (just a country/region code), solely to choose which local mental-health hotline to show in a care message. No purchase is involved, and nothing is sent to the developer.</li>
+  </ul>
+  <p>Apart from the Apple system services above, Huohua Diary performs no other network communication.</p>
+
+  <h2>5. Backup &amp; deletion</h2>
+  <ul>
+    <li>The built-in Backup &amp; Restore feature (Mailbox › Settings › Backup &amp; Restore) exports all your data as a single zip archive (human-readable JSON files plus the original voice, photo, and video files) — where it goes is entirely up to you (AirDrop, USB drive, local files, etc.);</li>
+    <li><strong>Device backups</strong>: if you have iCloud Backup turned on, or back up your phone to a computer, iOS includes Huohua Diary's data in the device backup just like any other app, stored in your own Apple account or on your computer. This goes through Apple only — never through any Huohua server, because there is none. You can exclude Huohua Diary from iCloud Backup in iOS Settings;</li>
+    <li>AI model files are excluded from iCloud Backup and do not consume your iCloud storage;</li>
     <li>Deleting the app deletes all data on the device. Please back up first.</li>
   </ul>
 
-  <h2>5. Third-party sharing</h2>
-  <p>Not applicable. Huohua shares data with no one — because we never have your data in the first place.</p>
+  <h2>6. AI-generated content and care messages</h2>
+  <ul>
+    <li><strong>AI-generated content</strong>: Huohua's replies, mood cards, and daily/weekly/monthly/yearly reviews are generated by the AI model downloaded to your device, and every piece is signed “火花” (Huohua) to make clear it was written by AI. Huohua Diary is a journaling tool, not a person, and what it writes is not medical, psychological, or other professional advice; AI-generated text can be wrong, so use your own judgment. This text is yours to use freely; the developer claims no rights to it;</li>
+    <li><strong>Care messages and hotlines</strong>: when what you write shows clear signs of crisis, Huohua appends a publicly listed 24-hour mental-health hotline number to its response (chosen by your App Store storefront, see Section 4). This only puts a way out within reach: Huohua makes no diagnosis or assessment, the check happens on your phone, and nothing is sent to anyone.</li>
+  </ul>
 
-  <h2>6. Children's privacy</h2>
-  <p>Huohua is not designed for children under 14. As the app collects no data, no children's personal information is ever collected.</p>
+  <h2>7. Third-party sharing</h2>
+  <p>Not applicable. Huohua Diary shares data with no one — because the developer never has your data in the first place. The only exception is the Apple system services described in Section 4, where the data is handled by Apple under Apple's privacy policy and is not accessible to the developer.</p>
 
-  <h2>7. Changes to this policy</h2>
-  <p>If future features change how data is handled (e.g., optional cloud sync), we will update this page and clearly notify you in the app. The principle that <em>your journal stays local by default</em> will not change.</p>
+  <h2>8. Children's privacy</h2>
+  <p>Huohua Diary is not designed for children under 14. As the app collects no data, no children's personal information is ever collected.</p>
 
-  <h2>8. Contact</h2>
+  <h2>9. Regions and language</h2>
+  <p>Huohua Diary launches first on the App Store in Hong Kong, Macao, Taiwan, Singapore, Malaysia, and Canada. This policy applies in every region where the app is distributed; the Chinese text is authoritative and the English text is provided for reference.</p>
+
+  <h2>10. Changes to this policy</h2>
+  <p>If future features change how data is handled (e.g., optional cloud sync), we will update this page with a new effective date and clearly notify you in the app. The principle that <em>your journal stays local by default</em> will not change.</p>
+
+  <h2>11. Contact</h2>
   <p>Questions about this policy? Contact the developer: <strong>haoxincool@126.com</strong></p>
 
   <footer>
-    <p class="muted">火花 Huohua · 让每个瞬间都有回应</p>
+    <p class="muted">火花日记 Huohua Diary · 让每个瞬间都有回应</p>
   </footer>
 
 </div>
